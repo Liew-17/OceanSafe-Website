@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="customize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>OceanSafe</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="upBtn" title="Go to top"><img width=25px src="Image/up-small-svgrepo-com.svg"></button>
+    <!-- Navigation bar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+      <a class="navbar-brand" href="#"><img width="30px" src="Image/3050651.png"></a>
+      
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ourwork.html">Our Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takeaction.html">Take Action</a>
+          </li>
+          <li class="nav-item  active">
+            <a class="nav-link" href="donation.html">Donation</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+        </ul>
+      </div>
+    
+         
+      <a href="cart.html" class="navbar-brand cart-btn">
+        <img height="30px" src="Image/cart-1-svgrepo-com.svg"> 
+        <p id="num"></p>
+      </a>
+      
+     
+    </nav>
+
+    <!-- herobanner-->
+    <div style=" background-image: url('Image/pexels-pok-rie-2049422.jpg');" class="hero-banner">
+      <div class="hero-text">
+        <h1>Donation</h1>
+       
+      </div>
+    </div>
+
+    <!-- introduction-->
+    <div class="container-fluid mt-3 pad" id="donateSection">
+    <div class="row ">
+      <div class="col">
+        <h5>Your support is essential for our ocean conservation mission. Together, we can protect marine ecosystems and promote sustainability. Thank you for your commitment to our cause.</h5>
+    
+      </div>
+    </div>
+    </div>
+
+    
+
+     <!-- donate area-->
+     <div class="container-fluid pad" >
+      <form autocomplete="off">
+      <div class="row">
+   
+          <!--info area-->
+          <div class="col-lg-6">
+            
+            <div class="row">
+            
+            <div class="col-12 col-sm-6 form-group">
+            <label for="exampleInputPassword1">First Name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+  
+            <div class="col-12 col-sm-6 form-group">
+            <label for="exampleInputPassword1">Last Name </label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+  
+            </div>
+  
+            <div class="form-group">
+            <label for="exampleInputEmail1">Phone</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+  
+            <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+          </div>
+            
+          
+        
+          <!--amount area-->
+          <div class="col-lg-6 mt-3">
+            <div class="row">
+                <div class="col">
+                <button class="btn-2 current" id="buttons">RM 5</button>
+                <button class="btn-2" id="buttons">RM 10</button>
+                <button class="btn-2" id="button">RM 25</button>
+                <button class="btn-2" id="button">RM 50</button>
+                </div>
+            </div>
+  
+            <div class="row">
+                <div class="col">
+                <button class="btn-2" id="button">RM 100</button>
+                <button class="btn-2" id="button">custom</button>
+                </div>
+            </div>
+  
+            <div class="row mt-3">
+                <div class="col">
+                <span style="color:gray;display: inline-block;"><p>RM</p></span>
+                <input required type="number" autocomplete="off" class="amountbox" id="customAmount" value="5" oninput="validateD()">
+                </div>
+            </div>
+  
+            <div class="row mt-3">
+              <div class="col">
+              <input type="checkbox" class="cbox" id="termcheckbox" required>
+              <span style="color:gray;font-size: 12px;">I have read and aceept the <a class="link" data-toggle="modal" data-target="#term">term and condition</a></span>
+              </div>
+           </div>
+  
+            <div class="row mt-3">
+              <div class="col">
+                <button type="submit" class="btn btn-primary">
+                    Donation
+                </button>
+              </div>
+            </div>
+       
+          </div>
+        
+      </div>
+      </form>
+    </div>
+     
+  
+
+    
+   
+    <hr class="my-4">
+    <!-- Donation Use-->
+    <div class="container-fluid pad">
+      <h1>How donations are used?</h1>
+      <div class="row mt-5 ">
+        <div class="col-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+          <img src="Image/Picture1.png" class="card-img-top-2" alt="...">
+          <div class="card-body">
+            <h2 class="card-text">Donate RM 5</h2>
+          <p class="card-text">Supports the purchase of reusable gloves for volunteers participating in beach cleaning activities.</p>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+          <img src="Image/pexels-polina-zimmerman-3747576.jpg" class="card-img-top-2" alt="...">
+          <div class="card-body">
+            <h2 class="card-text">Donate RM 10</h2>
+            <p class="card-text">Helps fund educational materials for one student attending a marine conservation workshop.</p>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+          <img src="Image/pexels-gelgas-airlangga-401213.jpg" class="card-img-top-2" alt="...">
+          <div class="card-body">
+            <h2 class="card-text">Donate RM 25</h2>
+            <p class="card-text">Contributes to the purchase of seedlings for one mangrove tree in a marine restoration project.</p>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+      <div class="col-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+        <img src="Image/pexels-tom-fisk-1522160.jpg" class="card-img-top-2" alt="...">
+        <div class="card-body">
+          <h2 class="card-text">Donate RM 50</h2>
+          <p class="card-text">Assists in the maintenance of a coral nursery, aiding in the restoration of damaged coral reefs.</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card" style="width: 18rem;">
+        <img src="Image/pexels-photo-3098970.jpeg" class="card-img-top-2" alt="...">
+        <div class="card-body">
+          <h2 class="card-text">Donate RM 100</h2>
+          <p class="card-text">Provides necessary equipment for underwater clean-up dives, ensuring safer and more effective marine debris removal efforts.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <!-- Scrollable modal -->
+    <div class="modal fade" id="term" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Term & Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+Welcome to OceanSafe.com By accessing this website, you agree to comply with and be bound by the following terms and conditions of use:
+<br>
+<span style="font-weight: bold;">Acceptance of Terms:</span><br>
+By using OceanSafe.com, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions. If you do not agree with any part of these terms, please do not use our website.
+<br>
+<span style="font-weight: bold;">Donations:</span><br>
+a. OceanSafe.com facilitates donations to various ocean conservation projects and organizations. By making a donation through our website, you understand and agree that:
+
+Your donation will be processed securely through our payment gateway.
+OceanSafe.com may deduct a small fee to cover administrative costs.
+Donations are non-refundable unless otherwise specified.<br>
+b. OceanSafe.com does not guarantee the outcome or impact of any donations made through our platform. We strive to support reputable projects, but we cannot be held responsible for their success or failure.
+<br>
+<span style="font-weight: bold;">Privacy Policy:</span><br>
+Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and protect your personal information.
+<br>
+<span style="font-weight: bold;">Intellectual Property:</span><br>
+All content on OceanSafe.com, including text, graphics, logos, images, and software, is the property of OceanSafe or its content suppliers and is protected by international copyright laws.
+<br>
+<span style="font-weight: bold;">Limitation of Liability:</span><br>
+a. OceanSafe.com is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the operation or availability of our website.
+b. OceanSafe shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in any way connected with the use of OceanSafe.com.
+<br>
+<span style="font-weight: bold;">Indemnification:</span><br>
+You agree to indemnify and hold harmless OceanSafe, its affiliates, officers, directors, employees, and agents from any and all claims, liabilities, damages, losses, or expenses arising out of your use of OceanSafe.com.
+<br>
+<span style="font-weight: bold;">Changes to Terms:</span><br>
+OceanSafe reserves the right to update or modify these terms and conditions at any time without prior notice. By continuing to use OceanSafe.com after any changes, you agree to be bound by the revised terms.
+
+Governing Law:
+These terms and conditions are governed by and construed in accordance with the laws of Malaysia. Any disputes relating to these terms shall be subject to the exclusive jurisdiction of the courts of Malaysia.
+
+If you have any questions or concerns about these terms and conditions, please contact us at <a href="contact.html">Contact page</a>.
+
+Thank you for using OceanSafe.com!<br>
+<span style="text-align: center;">@COPYRIGHT 2024. ALL RIGHTS RESERVED</span>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="updateCheckBox(false)" data-dismiss="modal">cancel</button>
+            <button type="button" class="btn btn-primary" onclick="updateCheckBox(true)" data-dismiss="modal">accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="container-fluid footer pad">
+      <div class="row ">
+          <div style="margin-bottom: 10px;"  class="col-12 col-lg-4 article ">
+            <img width="100px" src="Image/logo white.png"> 
+            <h6 align="left">Preserving our oceans, one wave at a time.</h6>               
+          </div>
+          <div  class="article col-4 col-lg-2 ">
+            <h6>Help & Resources</h6>
+             <a href="index.html">Home</a><br>
+             <a href="aboutus.html">About us</a><br>
+             <a href="contact.html">Contact</a><br>
+             <a href="term.html">Term&Conditions</a><br>
+             
+          </div>
+          <div class="col-4 col-lg-2 article ">
+              <h6>Participate & Engage</h6>
+             <a href="donation.html">Donation</a><br>
+             <a href="takeaction.html">Take action</a><br>
+             <a href="shop.html">Shop</a>
+           
+          </div>
+          <div class="col-4 col-lg-2 article ">
+            <h6>Contribution</h6>
+            <a href="ourwork.html">Our Work</a><br>
+           <a href="Education.html">Education Program</a><br>
+           <a href="service.html">Community Service</a><br>
+           <a href="marine.html">Marine Restoration</a>
+         
+        </div>
+          
+        </div>
+       
+        <div style="border-top:white 1px solid; padding-top: 25px;" class="row mt-3">
+          <div class="col-12 col-lg-2 ">
+          
+          </div>
+          <div class="col-12 col-lg-8 ">
+            <i class=" fab fa-facebook" ></i>
+            <i class=" fab fa-youtube"></i>
+            <i class=" fab fa-twitter"></i>
+            <i class=" fab fa-instagram"></i>
+            <i class=" fab fa-whatsapp"></i>
+          </div>
+         
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-4 ">
+          
+          </div>
+          <div class="col-12 col-lg-4 ">
+             <h6>&copy;2024 OceanSafe.com company reserved</h6> 
+          </div>
+          <div class="col-12 col-lg-4 ">
+           
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
